@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Me</title>
+    <title>Weekly Poll</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,7 +57,7 @@
 </head>
 <body>
     <header>
-        <h1>Contact me</h1>
+        <h1>Weekly Poll</h1>
     </header>
     
     <nav>
@@ -72,31 +72,46 @@
     
     <main>
         <section>
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch or look at my work, feel free to reach out to me at one of the following methods, the methods are ranked by preference, the top is the most preferred and the bottom is the least preferred.</p>
-        </section>
-        <section>
-            <h2>Gmails</h2>
-            <p> <a href="mailto:odinlode.gmail@.com">odinlode.gmail@.com</a>(Work). <br>
-                <a href="mailto:odinsilden74.gmail@.com">odinsilden74.gmail@.com</a>(Personal).
-            </p>
-        </section>
-        <section>
-            <h2>Github</h2>
-            <p><a href="https://github.com/Odelode">github.com/Odelode</a></p>
-        </section>
-        <section>
-            <h2>Phone</h2>
-            <p><a href="tel:+4740088607">40088607</a></p>
-        </section>
-        <section>
-            <h2>Discord</h2>
-            <p>Username: Odelode</p>
+            <div id="poll">
+                <h2>Weekly Poll: Work In Progress</h2>
+                <!--<form id="poll-form">
+                    <input type="radio" id="action" name="genre" value="Action">
+                    <label for="action">Action</label>
+                    <input type="radio" id="comedy" name="genre" value="Comedy">
+                    <label for="comedy">Comedy</label>
+                    <input type="radio" id="drama" name="genre" value="Drama">
+                    <label for="drama">Drama</label>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="poll-result"></p> -->
+            </div> 
         </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
+
+    <script>  const pollForm = document.getElementById('poll-form');
+        const pollResult = document.getElementById('poll-result');
+        
+        pollForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const selectedGenre = document.querySelector('input[name="genre"]:checked');
+            if (selectedGenre) {
+                const chosenGenre = selectedGenre.value;
+                const userAlreadyVoted = localStorage.getItem('userVoted');
+                if (!userAlreadyVoted) {
+                    // Store user's choice in local storage
+                    localStorage.setItem('userVoted', true);
+                    // Display poll result
+                    pollResult.textContent = `Thank you for voting! Your favorite genre is ${chosenGenre}.`;
+                } else {
+                    pollResult.textContent = "You've already voted in this week's poll.";
+                }
+            }
+        });
+        </script>
+
 </body>
 </html>
