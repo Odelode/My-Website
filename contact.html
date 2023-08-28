@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>Contact Me</title>
     <style>
         body {
@@ -58,6 +60,10 @@
 <body>
     <header>
         <h1>Contact me</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
     </header>
     
     <nav>
@@ -71,25 +77,25 @@
     </nav>
     
     <main>
-        <section>
+        <section class="contact">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch or look at my work, feel free to reach out to me at one of the following methods, the methods are ranked by preference, the top is the most preferred and the bottom is the least preferred.</p>
         </section>
-        <section>
+        <section class="gmail">
             <h2>Gmails</h2>
             <p> <a href="mailto:odinlode.gmail@.com">odinlode.gmail@.com</a>(Work). <br>
                 <a href="mailto:odinsilden74.gmail@.com">odinsilden74.gmail@.com</a>(Personal).
             </p>
         </section>
-        <section>
+        <section class="github">
             <h2>Github</h2>
             <p><a href="https://github.com/Odelode">github.com/Odelode</a></p>
         </section>
-        <section>
+        <section class="phone">
             <h2>Phone</h2>
             <p><a href="tel:+4740088607">40088607</a></p>
         </section>
-        <section>
+        <section class="discord">
             <h2>Discord</h2>
             <p>Username: Odelode</p>
         </section>
@@ -98,5 +104,6 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

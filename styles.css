@@ -1,0 +1,55 @@
+body {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+
+.dark-mode-toggle label {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 8px;
+}
+
+
+.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #ffffff; 
+}
+
+
+.dark-mode p, .dark-mode a {
+    color: #d1d1d1; 
+}
+
+
+.dark-mode a {
+    color: #80c0ff; 
+}
+
+
+.dark-mode .myworld, .dark-mode .knowme, .dark-mode .thiswebsite,
+.dark-mode .creator, .dark-mode .hobbies,
+.dark-mode .future-goals, .dark-mode .aboutme,
+.dark-mode .programmingjourney, .dark-mode .movies, .dark-mode .services, 
+.dark-mode .contact, .dark-mode .gmail, .dark-mode .github, .dark-mode .phone,
+.dark-mode .discord, .dark-mode .poll {
+    background-color: #1e1e1e; 
+}

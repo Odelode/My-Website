@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>Weekly Poll</title>
     <style>
         body {
@@ -58,6 +60,10 @@
 <body>
     <header>
         <h1>Weekly Poll</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
     </header>
     
     <nav>
@@ -71,7 +77,7 @@
     </nav>
     
     <main>
-        <section>
+        <section class="poll">
             <div id="poll">
                 <h2>Weekly Poll: Work In Progress</h2>
                 <!--<form id="poll-form">
@@ -91,7 +97,7 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
-
+<!----
     <script>  const pollForm = document.getElementById('poll-form');
         const pollResult = document.getElementById('poll-result');
         
@@ -112,6 +118,7 @@
             }
         });
         </script>
-
+        -->
+    <script src="script.js"></script>
 </body>
 </html>

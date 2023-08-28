@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>About Me</title>
     <style>
         body {
@@ -58,6 +60,10 @@
 <body>
     <header>
         <h1>About me</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
     </header>
     
     <nav>
@@ -71,11 +77,28 @@
     </nav>
     
     <main>
-        <section>
+        <section class="aboutme">
             <h2>About Me</h2>
             <p>Hello, I'm Odin! I'm passionate about movies, TV shows, video games, and technology. I'm also currently learning about programming at Ulstein VGS, and a bit of game design in my free time.</p>
         </section>
-        <section>
+
+        <section class="programmingjourney">
+            <h2>My Programming Journey</h2>
+            <p>
+            I have been interested in beginning to program since a young age, but I didn't have any good methods of learning, but recently I have been able to choose a tech-oriented
+            school. I am excited to learn more about progarmming and use it to create softwares.
+            </p>
+        </section>
+        
+        <section class="future-goals">
+            <h2>Future Goals</h2>
+            <p>
+                Looking ahead, I'm excited to continue honing my programming skills and diving deeper into various programming languages and technologies.
+                I wish to use these skills to make programs I can be happy with.
+            </p>
+        </section>
+
+        <section class="hobbies">
             <h2>My Hobbies</h2>
             <ul>
                 <li>Movies</li>
@@ -87,7 +110,7 @@
             </ul>
         </section>
     
-        <section>
+        <section class="movies">
             <h2>Favorite Movies</h2>
             <ul>
                 <li>Spider-Man Across The Spider-Verse</li>
@@ -101,5 +124,6 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

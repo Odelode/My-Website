@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
     <title>My Website</title>
     <style>
@@ -59,6 +60,10 @@
 <body>
     <header>
         <h1>Welcome to My Website</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
     </header>
     
     <nav>
@@ -72,13 +77,27 @@
     </nav>
     
     <main>
-        <section>
-            <h2>Point of the website</h2>
+        <section class="myworld">
+            <h1>Welcome to My World</h1>
+            <p>
+                This is my little corner of the internet, I want to use this website for people to get to know me, and share things about myself.
+            </p>
+        </section>
+
+        <section class="knowme">
+            <h2>Get to know me</h2>
+            <p>
+                I'd love to get to know more people, so if you somehow stumbled upon this website and want to get to know me just contact me.
+            </p>
+        </section>
+
+        <section class="thiswebsite">
+            <h2>Point of This Website</h2>
             <p>This is a website about me and my work, it's still a work in progress. 
                 If you want to keep track with me and my future endeavouros please refer to the contact part of the website, accessed through the button at the top labled "Contact"</p>
         </section>
 
-        <section>
+        <section class="creator">
             <h2>The Creator</h2>
             <p>Hello, I'm Odin the creator of this website. 
                 If you want to learn more about me refer to the About section which can be accessed through the button at the top labled "About"</p>
@@ -88,6 +107,6 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

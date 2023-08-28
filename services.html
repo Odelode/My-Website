@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>My Services</title>
     <style>
         body {
@@ -58,6 +60,10 @@
 <body>
     <header>
         <h1>My services</h1>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
     </header>
     
     <nav>
@@ -71,7 +77,7 @@
     </nav>
     
     <main>
-        <section>
+        <section class="services">
             <h2>My Services</h2>
             <p>Welcome to my services page! I currently offer no services, but I might in the future.</p>
             
@@ -86,5 +92,6 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
