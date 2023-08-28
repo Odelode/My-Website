@@ -11,10 +11,15 @@ window.addEventListener('load', function() {
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode');
+
+    localStorage.setItem('darkModeEnabled', body.classList.contains('dark-mode'));
 }
 
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('change', toggleDarkMode);
+
+if (localStorage.getItem('darkModeEnabled') === 'true')
+    document.body.classList.add('dark-mode');
 
 
 function updateToggleLabel() {
@@ -25,3 +30,4 @@ function updateToggleLabel() {
 updateToggleLabel();
 
 document.body.addEventListener('classChange', updateToggleLabel);
+
