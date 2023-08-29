@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Weekly Poll</h1>
+        <h1>Polls</h1>
         <div class="dark-mode-toggle">
             <input type="checkbox" id="darkModeToggle">
             <label for="darkModeToggle">Dark Mode</label>
@@ -20,15 +20,15 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="poll.html">Weekly poll</a></li>
+            <li><a href="poll.html">Polls</a></li>
         </ul>
     </nav>
     
     <main>
         <section class="poll">
             <div id="poll">
-                <h2>Weekly Poll: Work In Progress</h2>
-                <!--<form id="poll-form">
+                <h2>Polls</h2>
+                    <form id="poll-form">
                     <input type="radio" id="action" name="genre" value="Action">
                     <label for="action">Action</label>
                     <input type="radio" id="comedy" name="genre" value="Comedy">
@@ -37,7 +37,6 @@
                     <label for="drama">Drama</label>
                     <button type="submit">Submit</button>
                 </form>
-                <p id="poll-result"></p> -->
             </div> 
         </section>
     </main>
@@ -45,28 +44,7 @@
     <footer>
         <p>&copy; 2023 Odin's Website. All rights reserved.</p>
     </footer>
-<!----
-    <script>  const pollForm = document.getElementById('poll-form');
-        const pollResult = document.getElementById('poll-result');
-        
-        pollForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const selectedGenre = document.querySelector('input[name="genre"]:checked');
-            if (selectedGenre) {
-                const chosenGenre = selectedGenre.value;
-                const userAlreadyVoted = localStorage.getItem('userVoted');
-                if (!userAlreadyVoted) {
-                    // Store user's choice in local storage
-                    localStorage.setItem('userVoted', true);
-                    // Display poll result
-                    pollResult.textContent = `Thank you for voting! Your favorite genre is ${chosenGenre}.`;
-                } else {
-                    pollResult.textContent = "You've already voted in this week's poll.";
-                }
-            }
-        });
-        </script>
-        -->
     <script src="script.js"></script>
+    <script src="poll-script.js"></script>
 </body>
 </html>

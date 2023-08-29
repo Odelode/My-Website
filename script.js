@@ -11,15 +11,15 @@ function toggleDarkMode() {
 
     localStorage.setItem('darkModeEnabled', body.classList.contains('dark-mode'));
 
-    updateToggleLabel(); // Update the button text when the mode is toggled
+    updateToggleLabel(); 
 }
 
 const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('click', toggleDarkMode); // Listen for the click event
+darkModeToggle.addEventListener('click', toggleDarkMode); 
 
 if (localStorage.getItem('darkModeEnabled') === 'true') {
     document.body.classList.add('dark-mode');
-    updateToggleLabel(); // Update the button text when starting in dark mode
+    updateToggleLabel(); 
 }
 
 function updateToggleLabel() {
