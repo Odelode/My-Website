@@ -54,3 +54,19 @@ body {
     background-color: #1e1e1e; 
 }
 
+.container {
+    width: 960px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
