@@ -122,3 +122,36 @@ body {
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+    nav ul {
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
