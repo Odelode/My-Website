@@ -102,7 +102,7 @@ body {
 .dark-mode .future-goals, .dark-mode .aboutme,
 .dark-mode .programmingjourney, .dark-mode .movies, .dark-mode .services, 
 .dark-mode .contact, .dark-mode .gmail, .dark-mode .github, .dark-mode .phone,
-.dark-mode .discord, .dark-mode .poll, .dark-mode .series, .dark-mode .comics, .dark-mode .games {
+.dark-mode .discord, .dark-mode .poll, .dark-mode .series, .dark-mode .comics, .dark-mode .games, .dark-mode .icon {
     background-color: #1e1e1e; 
 }
 
