@@ -19,9 +19,19 @@
             <option value="fr">French</option>
         </select>
         
-        <a id="englishLink" href="../about.html">English</a>
-        <a id="norwegianLink" href="about-NO.html">Norwegian</a>
-        <a id="frenchLink" href="../French/about-FR.html">French</a>
+        <script>
+        document.getElementById("language").addEventListener("change", function() {
+            var selectedLanguage = this.value;
+            
+            if (selectedLanguage === "en") {
+                window.location.href = "../about.html";
+            } else if (selectedLanguage === "no") {
+                window.location.href = "../Norwegian/about-NO.html";
+            } else if (selectedLanguage === "fr") {
+                window.location.href = "../French/about-FR.html";
+            }
+        });
+        </script>
     </header>
     
     <nav>
