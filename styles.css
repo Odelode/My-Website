@@ -156,3 +156,26 @@ body {
         font-size: 14px;
     }
 }
+
+
+#language {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #444; 
+    color: white; 
+    margin-right: 10px; 
+}
+
+
+.language-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#language,
+.language-link {
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}

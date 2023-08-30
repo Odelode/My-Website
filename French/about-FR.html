@@ -12,13 +12,16 @@
             <input type="checkbox" id="darkModeToggle">
             <label for="darkModeToggle">Dark Mode</label>
         </div>
-        <div class="dropdown">
-            <button class="lagnuage">Dropdown</button>
-            <div class="lagnuage-dropdown">
-              <a href="../about.html">English</a>
-              <a href="../Norwegian/about-NO.html">Norwegian</a>
-            </div>
-        </div>
+        <label for="language">Select Language:</label>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="no">Norwegian</option>
+            <option value="fr">French</option>
+        </select>
+        
+        <a id="englishLink" href="../about.html">English</a>
+        <a id="norwegianLink" href="../Norwegian/about-NO.html">Norwegian</a>
+        <a id="frenchLink" href="../French/about-FR.html">French</a>
     </header>
     
     <nav>
