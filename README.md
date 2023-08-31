@@ -1,1 +1,1 @@
-Thanks Astrid S for being the official translator.
+Thanks Astrid S for being the official translator of one of three options.
