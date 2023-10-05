@@ -34,14 +34,14 @@ nav ul li a {
 main {
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+    padding-bottom: 56.25%;
 }
 
 .video-container iframe {
