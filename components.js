@@ -1,11 +1,14 @@
 class NavComponent extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open'});
-        this.render();
+        this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
+        this.render();
+    }
+
+    render() {
         this.shadowRoot.innerHTML = `
             <nav>
                 <ul>
@@ -20,14 +23,17 @@ class NavComponent extends HTMLElement {
     }
 }
 
-
-
-class darkModeToggle extends HTMLElement {
+class DarkModeToggle extends HTMLElement {
     constructor() {
         super();
+        this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
+        this.render();
+    }
+
+    render() {
         this.shadowRoot.innerHTML = `
         <div class="dark-mode-toggle">
             <input type="checkbox" id="darkModeToggle">
@@ -38,4 +44,4 @@ class darkModeToggle extends HTMLElement {
 }
 
 customElements.define('nav-component', NavComponent);
-customElements.define('dark-mode-toggle', darkModeToggle);
+customElements.define('dark-mode-toggle', DarkModeToggle);
