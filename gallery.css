@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(6, 225px);
     gap: 50px;
-    margin: 30px;
+/*    margin: 30px; */
 }
 
 .gallery-item {
