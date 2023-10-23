@@ -12,7 +12,7 @@ class NavComponent extends HTMLElement {
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="video-gallery.html">Video Gallery</a></li>
                     <li><a href="music.html">Music likes</a></li>
-                    <li><a href="Reviews/reviews.html"></a></li>
+                    <li><a href="Reviews/reviews.html">Reviews</a></li>
                     <li><a href="credits.html">Sources</a></li>
                 </ul>
             </nav>
