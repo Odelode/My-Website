@@ -28,7 +28,7 @@
 
         <section>
             <h2>About me</h2>
-            <p>Hello I am Odin and <span id="ageDisplay"> I'm 0 years old</span></p>
+            <p>Hello I am Odin and <span id="ageDisplay"></span></p>
             
             <script>
         const birthDate = new Date('2007-09-02');
@@ -38,7 +38,7 @@
             const ageInMilliseconds = currentDate - birthDate;
             const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
 
-            document.getElementById('ageDisplay').textContent = `I am ${ageInYears.toFixed(10)}`;
+            document.getElementById('ageDisplay').textContent = `I'm ${ageInYears.toFixed(10)}`;
         }
 
         updateAge();
