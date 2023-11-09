@@ -38,10 +38,10 @@
             const now = new Date();
             now.setTime(now.getTime() + 1 * 60 * 60 * 1000);
             const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
-            document.getElementById('time').innerHTML = `${now.getHours()}:${now.getMinutes()}:${seconds.toFixed(3)}`;
+            document.getElementById('time').innerHTML = `${now.getHours()}:${now.getMinutes()}:${seconds.toFixed(10)}`;
         }
 
-        setInterval(updateTime, 100);
+        setInterval(updateTime, 1);
         updateTime();
             </script>
             <script>
