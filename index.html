@@ -36,27 +36,20 @@
             <script>
         function updateTime() {
             const now = new Date();
-            now.setTime(now.getTime() + 1 * 60 * 60 * 1000);
-            const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
-            document.getElementById('time').innerHTML = `${now.getHours()}:${now.getMinutes()}:${seconds.toFixed(3)}`;
+            const options = { timeZone: 'Europe/Oslo', hour12: false };
+            const formatter = new Intl.DateTimeFormat('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hourCycle: 'h23',
+                timeZoneName: 'short'
+            });
+            const timeString = formatter.formatToParts(now, options).map(part => part.value).join('');
+            document.getElementById('time').innerHTML = `Current Time in Norway: ${timeString}.${now.getMilliseconds()}`;
         }
 
         setInterval(updateTime, 1);
         updateTime();
-            </script>
-            <script>
-        const birthDate = new Date('2007-09-02');
-
-        function updateAge() {
-            const currentDate = new Date();
-            const ageInMilliseconds = currentDate - birthDate;
-            const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
-
-            document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)} years old`;
-        }
-
-        updateAge();
-        setInterval(updateAge, 1);
             </script>
         </section>
 
