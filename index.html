@@ -31,8 +31,19 @@
 
         <section>
             <h2>About me</h2>
-            <p>Hello I am Odin and I'm <span id="ageDisplay"></span>, and the time where I live is </p>
+            <p>Hello I am Odin and I'm <span id="ageDisplay"></span>, and the time where I live is <span id="time"></span></p>
             
+            <script>
+        function updateTime() {
+            const now = new Date();
+            now.setTime(now.getTime() + 1 * 60 * 60 * 1000);
+            const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
+            document.getElementById('time').innerHTML = `${now.getHours()}:${now.getMinutes()}:${seconds.toFixed(3)}`;
+        }
+
+        setInterval(updateTime, 100);
+        updateTime();
+            </script>
             <script>
         const birthDate = new Date('2007-09-02');
 
