@@ -36,15 +36,13 @@
             <script>
         function updateTime() {
             const now = new Date();
-            const options = { timeZone: 'Europe/Oslo', hour12: false };
-            const formatter = new Intl.DateTimeFormat('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hourCycle: 'h23',
-                timeZoneName: 'short'
-            });
-            const timeString = formatter.formatToParts(now, options).map(part => part.value).join('');
+            const options = { timeZone: 'Europe/Oslo', 
+            hour12: false, 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit' };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            const timeString = formatter.format(now);
             document.getElementById('time').innerHTML = `${timeString}.${now.getMilliseconds()}`;
         }
 
