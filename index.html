@@ -49,6 +49,20 @@
         setInterval(updateTime, 1);
         updateTime();
             </script>
+            <script>
+                const birthDate = new Date('2007-09-02');
+        
+                function updateAge() {
+                    const currentDate = new Date();
+                    const ageInMilliseconds = currentDate - birthDate;
+                    const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+        
+                    document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)} years old`;
+                }
+        
+                updateAge();
+                setInterval(updateAge, 1);
+            </script>            
         </section>
 
         <section class="alt-section">
