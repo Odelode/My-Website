@@ -8,6 +8,7 @@
     <script src="JS/scripts.js"></script>
     <script src="JS/nav-component.js"></script>
     <script src="JS/footer-component.js"></script>
+    <script src="JS/GIF.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Home Page</title>
 </head>
@@ -30,7 +31,7 @@
 
         <section>
             <h2>About me</h2>
-            <p>Hello I am Odin and I'm <span id="ageDisplay"></span></p>
+            <p>Hello I am Odin and I'm <span id="ageDisplay"></span>, and the time where I live is </p>
             
             <script>
         const birthDate = new Date('2007-09-02');
@@ -40,7 +41,7 @@
             const ageInMilliseconds = currentDate - birthDate;
             const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
 
-            document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)}`;
+            document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)} years old`;
         }
 
         updateAge();
