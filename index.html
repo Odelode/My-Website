@@ -45,7 +45,7 @@
                 timeZoneName: 'short'
             });
             const timeString = formatter.formatToParts(now, options).map(part => part.value).join('');
-            document.getElementById('time').innerHTML = `Current Time in Norway: ${timeString}.${now.getMilliseconds()}`;
+            document.getElementById('time').innerHTML = `${timeString}.${now.getMilliseconds()}`;
         }
 
         setInterval(updateTime, 1);
