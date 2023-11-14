@@ -14,6 +14,7 @@ class NavComponent extends HTMLElement {
                     <li><a href="music.html">Music likes</a></li>
                     <li><a href="awards.html">Awards</a></li>
                     <li><a href="credits.html">Sources</a></li>
+                    <li><a href="admin-protected.html">Admin</a></li>
                 </ul>
             </nav>
         `;
