@@ -89,5 +89,13 @@
     }
   ],
   "id": "odelode",
-  "lang": "en"
+  "lang": "en",
+  "prefer_related_applications": false,
+  "display_override": [
+    "browser",
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay"
+  ]
 }
