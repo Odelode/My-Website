@@ -92,8 +92,8 @@
     "lang": "en",
     "prefer_related_applications": false,
     "display_override": [
-      "browser",
       "standalone",
+      "browser",
       "fullscreen",
       "minimal-ui",
       "window-controls-overlay"
