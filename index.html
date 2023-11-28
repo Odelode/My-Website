@@ -31,24 +31,8 @@
 
         <section>
             <h2>About me</h2>
-            <p>Hello I am Odin and I'm <span id="ageDisplay"></span>, and the time where I live is: <span id="time"></span></p>
+            <p>Hello I am Odin and I'm <span id="ageDisplay"></span> years old.</p>
             
-            <script>
-        function updateTime() {
-            const now = new Date();
-            const options = { timeZone: 'Europe/Oslo', 
-            hour12: false, 
-            hour: '2-digit', 
-            minute: '2-digit', 
-            second: '2-digit' };
-            const formatter = new Intl.DateTimeFormat('en-US', options);
-            const timeString = formatter.format(now);
-            document.getElementById('time').innerHTML = `${timeString}.${now.getMilliseconds()}`;
-        }
-
-        setInterval(updateTime, 1);
-        updateTime();
-            </script>
             <script>
                 const birthDate = new Date('2007-09-02');
         
@@ -57,7 +41,7 @@
                     const ageInMilliseconds = currentDate - birthDate;
                     const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
         
-                    document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)} years old`;
+                    document.getElementById('ageDisplay').textContent = `${ageInYears.toFixed(10)}`;
                 }
         
                 updateAge();
