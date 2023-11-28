@@ -85,3 +85,12 @@ footer a {
     color: white;
     text-decoration: underline;
 }
+
+#testfix {
+    display: flex;
+    justify-content: left;
+}
+
+.diasappearfix  {
+    margin: 0.1rem;
+}
