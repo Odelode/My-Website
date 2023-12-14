@@ -4,6 +4,7 @@ fetch('../JSON/gallery-1.json')
     const gallery = document.querySelector('.gallery-1');
     data.forEach(item => {
       let img = document.createElement('img');
+      img.setAttribute('loading', 'eager')
       img.src = item.url;
       img.alt = item.alt;
 
