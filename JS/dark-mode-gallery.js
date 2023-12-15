@@ -41,10 +41,3 @@ function removeDarkModeStylesheets() {
     linkElement && linkElement.parentNode.removeChild(linkElement);
   });
 }
-
-window.onload = function() {
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
-  if (isDarkMode) {
-    addDarkModeStylesheets();
-  }
-};
