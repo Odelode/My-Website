@@ -9,23 +9,7 @@
     <script src="JS/footer-component.js"></script>
     <link rel="icon" type="image/x-icon" href="Pictures/favicon.png">
     <title>Video Gallery</title>
-    <script>
-        $(function () {
-
-            $("iframe").not(":has([src])").each(function () {
-
-            var ifrm = this;
-
-            ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-
-            ifrm.document.open();
-            ifrm.document.write($(this).attr("alt"));
-            ifrm.document.close();
-
-            });
-
-        });
-        </script>
+    <script src="JS/ifrm-alt.js"></script>
 </head>
 <body>
     <header>
@@ -43,20 +27,11 @@
     <nav-component></nav-component>
 
     <main>
-        <div class="video-container">
-            <iframe src="https://youtube.com/embed/hNBQMbrqLaA" frameborder="0" allowfullscreen alt="Video I made about camera angles."></iframe>
-        </div>
 
-        <div class="video-container">
-            <iframe src="https://youtube.com/embed/Bgf42YkethE" frameborder="0" allowfullscreen alt="A video I made about how English is useful in my future career."></iframe>
-        </div>
-
-        <div class="video-container">
-            <iframe src="https://youtube.com/embed/YR228QS_k4g" frameborder="0" allowfullscreen alt="A video I made for a project about movie trailers"></iframe>
-        </div>
     </main>
-
+    
     <footer-component></footer-component>
     <script src="JS/dark-mode-style.js"></script>
+    <script src="JS/video-gallery-fetch-api.js"></script>
 </body>
 </html>
