@@ -7,7 +7,7 @@ fetch('../JSON/video-gallery.json')
       iframe.setAttribute('frameborder', '0')
       iframe.setAttribute('allowfullscreen', 'true')
       iframe.src = item.url;
-      iframe.alt = item.alt;
+      iframe.title = item.alt;
 
       let div = document.createElement('div');
       div.classList.add('video-container');

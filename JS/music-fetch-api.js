@@ -10,7 +10,7 @@ fetch('../JSON/music.json')
       iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture')
       iframe.setAttribute('style', 'border-radius : 12px, width: 100%; height: 352;')
       iframe.src = item.url;
-      iframe.alt = item.alt;
+      iframe.title = item.alt;
 
       let div = document.createElement('div');
       div.classList.add('video-container');
