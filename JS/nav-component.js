@@ -15,6 +15,7 @@ class NavComponent extends HTMLElement {
                     <li><a href="quiz.html">Forms</a></li>
                     <li><a href="awards.html">Awards</a></li>
                     <li><a href="admin-protected.html">Admin</a></li>
+                    <li><a href=""></a>Test</li>
                 </ul>
             </nav>
         `;
