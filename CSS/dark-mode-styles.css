@@ -46,3 +46,17 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #ddd;
 }
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr,
+td,
+th
+{
+    border: 2px solid #ddd;
+    padding: 8px;
+}
