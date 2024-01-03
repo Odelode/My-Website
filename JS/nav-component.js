@@ -7,12 +7,12 @@ class NavComponent extends HTMLElement {
         this.innerHTML = `
             <nav>
                 <ul>
-                    <li><a href="index">Home Page</a></li>
-                    <li><a href="hobbies">My Hobbies</a></li>
-                    <li><a href="gallery">Gallery</a></li>
-                    <li><a href="video-gallery">Video Gallery</a></li>
-                    <li><a href="music">Music likes</a></li>
-                    <li><a href="awards">Awards</a></li>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="hobbies.html">My Hobbies</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="video-gallery.html">Video Gallery</a></li>
+                    <li><a href="music.html">Music likes</a></li>
+                    <li><a href="awards.html">Awards</a></li>
                 </ul>
             </nav>
         `;
