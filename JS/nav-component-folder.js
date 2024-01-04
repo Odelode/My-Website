@@ -13,6 +13,7 @@ class NavComponent extends HTMLElement {
                     <li><a href="../video-gallery.html">Video Gallery</a></li>
                     <li><a href="../music.html">Music likes</a></li>
                     <li><a href="../awards.html">Awards</a></li>
+                    <li><a href="../COUNTDOWN.html">COUNTDOWN</a></li>
                 </ul>
             </nav>
         `;
