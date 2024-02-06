@@ -20,7 +20,7 @@ var countdownInterval = setInterval(function() {
 }, 1);
 
 var countdownElement2 = document.getElementById('countdown2');
-var targetDate2 = new Date('2025-06-20T12:00:00'); 
+var targetDate2 = new Date('2025-06-20T15:15:00'); 
 var countdownInterval2 = setInterval(function() {
     var now = new Date();
     var distance = targetDate2 - now;
