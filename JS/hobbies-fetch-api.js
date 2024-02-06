@@ -1,4 +1,60 @@
-fetch('../JSON/hobbies-1.json')
+fetch('../JSON/information.json')
+.then(response => response.json())
+.then(data => {
+  const hobbies = document.querySelector('main');
+  data.forEach(item => {
+    let h2 = document.createElement('h2');
+    let p = document.createElement('p');
+    h2.text = item.h2;
+    p.text = item.p;
+
+    let section = document.createElement('section');
+    section.appendChild(h2);
+    section.appendChild(p);
+
+    hobbies.appendChild(section);
+  });
+})
+
+fetch('../JSON/hobbies-sections-1.json')
+  .then(response => response.json())
+  .then(data => {
+    const hobbies = document.querySelector('main');
+    data.forEach(item => {
+      let h2 = document.createElement('h2');
+      let p = document.createElement('p');
+      let ul = document.createElement('ul');
+      h2.text = item.h2;
+      p.text = item.p;
+
+      let section = document.createElement('section');
+      section.appendChild(h2);
+      section.appendChild(p);
+      section.appendChild(ul);
+
+      hobbies.appendChild(section);
+    });
+  })
+  
+  fetch('../JSON/hobbies-sections-2.json')
+  .then(response => response.json())
+  .then(data => {
+    const hobbies = document.querySelector('main');
+    data.forEach(item => {
+      let h2 = document.createElement('h2');
+      let p = document.createElement('p');
+      h2.text = item.h2;
+      p.text = item.p;
+
+      let section = document.createElement('section');
+      section.appendChild(h2);
+      section.appendChild(p);
+
+      hobbies.appendChild(section);
+    });
+  })
+
+  fetch('../JSON/hobbies-1.json')
   .then(response => response.json())
   .then(data => {
     const hobbies = document.querySelector('.links-1');
@@ -14,6 +70,7 @@ fetch('../JSON/hobbies-1.json')
       hobbies.appendChild(li);
     });
   })
+
 
   fetch('../JSON/hobbies-2.json')
   .then(response => response.json())

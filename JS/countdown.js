@@ -1,5 +1,5 @@
 var countdownElement = document.getElementById('countdown');
-var targetDate = new Date('2024-06-21T12:00:00');
+var targetDate = new Date('2024-06-10T12:00:00');
 
 var countdownInterval = setInterval(function() {
     var now = new Date();
