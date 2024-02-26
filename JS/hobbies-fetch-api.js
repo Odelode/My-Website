@@ -5,8 +5,8 @@ fetch('../JSON/information.json')
   data.forEach(item => {
     let h2 = document.createElement('h2');
     let p = document.createElement('p');
-    h2.text = item.h2;
-    p.text = item.p;
+    h2.textContent = item.h2;
+    p.textContent = item.p;
 
     let section = document.createElement('section');
     section.appendChild(h2);
@@ -24,8 +24,8 @@ fetch('../JSON/hobbies-sections-1.json')
       let h2 = document.createElement('h2');
       let p = document.createElement('p');
       let ul = document.createElement('ul');
-      h2.text = item.h2;
-      p.text = item.p;
+      h2.textContent = item.h2;
+      p.textContent = item.p;
 
       let section = document.createElement('section');
       section.appendChild(h2);
@@ -43,8 +43,8 @@ fetch('../JSON/hobbies-sections-1.json')
     data.forEach(item => {
       let h2 = document.createElement('h2');
       let p = document.createElement('p');
-      h2.text = item.h2;
-      p.text = item.p;
+      h2.textContent = item.h2;
+      p.textContent = item.p;
 
       let section = document.createElement('section');
       section.appendChild(h2);
@@ -62,7 +62,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let a = document.createElement('a');
       a.setAttribute('target', '_blank')
       a.href = item.url;
-      a.text = item.alt;
+      a.textContent = item.alt;
 
       let li = document.createElement('li');
       li.appendChild(a);
@@ -80,7 +80,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let a = document.createElement('a');
       a.setAttribute('target', '_blank')
       a.href = item.url;
-      a.text = item.alt;
+      a.textContent = item.alt;
 
       let li = document.createElement('li');
       li.appendChild(a);
@@ -97,7 +97,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let a = document.createElement('a');
       a.setAttribute('target', '_blank')
       a.href = item.url;
-      a.text = item.alt;
+      a.textContent = item.alt;
 
       let li = document.createElement('li');
       li.appendChild(a);
@@ -114,7 +114,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let a = document.createElement('a');
       a.setAttribute('target', '_blank')
       a.href = item.url;
-      a.text = item.alt;
+      a.textContent = item.alt;
 
       let li = document.createElement('li');
       li.appendChild(a);
@@ -131,7 +131,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let a = document.createElement('a');
       a.setAttribute('target', '_blank')
       a.href = item.url;
-      a.text = item.alt;
+      a.textContent = item.alt;
 
       let li = document.createElement('li');
       li.appendChild(a);
