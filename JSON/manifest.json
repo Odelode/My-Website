@@ -79,13 +79,13 @@
         "src": "Pictures/favicon.png",
         "type": "image/png",
         "sizes": "512x512",
-        "purpose": "any"
+        "purpose": "icon"
       },
       {
         "src": "Pictures/144favicon.png",
         "type": "image/png",
         "sizes": "144x144",
-        "purpose": "any"
+        "purpose": "icon"
       }
     ],
     "shortcuts": [
