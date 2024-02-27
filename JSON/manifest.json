@@ -85,7 +85,7 @@
         "src": "Pictures/144favicon.png",
         "type": "image/png",
         "sizes": "144x144",
-        "purpose": "any"
+        "purpose": "extra"
       }
     ],
     "shortcuts": [
