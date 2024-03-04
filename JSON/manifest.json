@@ -76,16 +76,10 @@
     ],
     "icons": [
       {
-        "src": "Pictures/favicon.png",
+        "src": "../Pictures/favicon.png",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "any"
-      },
-      {
-        "src": "Pictures/144favicon.png",
-        "type": "image/png",
-        "sizes": "144x144",
-        "purpose": "extra"
       }
     ],
     "shortcuts": [
