@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/CSS/roadmap.css">
     <script src="/JS/nav-component.js"></script>
     <script src="/JS/footer-component.js"></script>
+    <script src="/JS/dark-mode-index.js" defer></script>
+    <script src="/JS/age.js" defer></script>
+    <script src="/JS/roadmap-fetch-api.js" defer></script>
     <link rel="manifest" href="/JSON/manifest.json">    
     <link rel="icon" type="image/x-icon" href="/Pictures/favicon.png">
     <title>Odelode's Home Page</title>
@@ -20,8 +23,8 @@
             function googleTranslateElementInit() {
              new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
             }
-            </script>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </header>
     
     <nav-component></nav-component>
@@ -29,8 +32,8 @@
     <main>
         <section>
             <h2>About me</h2>
-            <div id="testfix">
-                <p class="disappearfix">Hello I am Odin and I'm<span id="ageDisplay"></span></p> <p class="disappearfix">years old.</p>
+            <div>
+                <p>Hello I am Odin and I'm<span id="ageDisplay"></span> years old.</p>
             </div>
         </section>
 
@@ -45,14 +48,10 @@
                 Even though the tasks have numbers I will probably do them in a random order, this is more because of how I work then anything.
                 Also please contact me if you have any suggestions for the website</p>
             <div class="roadmap">
-                
             </div>
         </section>
     </main>
 
     <footer-component></footer-component>
-    <script src="/JS/dark-mode-index.js"></script>
-    <script src="/JS/age.js"></script>
-    <script src="/JS/roadmap-fetch-api.js"></script>
 </body>
 </html>
