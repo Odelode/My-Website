@@ -42,7 +42,7 @@ fetch('../JSON/hobbies-sections-1.json')
       let h2 = document.createElement('h2');
       let p = document.createElement('p');
       h2.textContent = item.h2;
-      p.textContent = item.p;
+      p.innerHTML = item.p;
 
       let section = document.createElement('section');
       section.appendChild(h2);

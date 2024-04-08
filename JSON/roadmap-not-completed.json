@@ -1,4 +1,5 @@
 [
     {"h2": "Task 4: Actually use the roadmap", "p": "I haven't used the roadmap a single time since I made it."},
-    {"h2": "Task 5: Fix the phone issue", "p": "There's an issue from home page first paragraph where the sentance gets split in half on phone. This is a side effect of me poorly fixing a different issue."}
+    {"h2": "Task 5: Fix the phone issue", "p": "There's an issue from home page first paragraph where the sentance gets split in half on phone. This is a side effect of me poorly fixing a different issue."},
+    {"h2": "Task 6: Fix the fetch issue", "p": "There's an issue where the first time you load a page my fetch api loads some things in the wrong order, and some things it just doesn't load."}
 ]
