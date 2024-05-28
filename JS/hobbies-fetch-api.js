@@ -1,3 +1,6 @@
+let ready1 = false;
+let ready2 = false;
+
 fetch('../JSON/information.json')
 .then(response => response.json())
 .then(data => {
@@ -13,9 +16,11 @@ fetch('../JSON/information.json')
     section.appendChild(p);
 
     hobbies.appendChild(section);
+    ready1 = true;
   });
 })
 
+if(ready1 = true) {
 fetch('../JSON/hobbies-sections-1.json')
   .then(response => response.json())
   .then(data => {
@@ -31,9 +36,12 @@ fetch('../JSON/hobbies-sections-1.json')
       section.appendChild(p);
 
       hobbies.appendChild(section);
+      ready2 = true;
     });
   })
+}
 
+if(ready2 = true) {
   fetch('../JSON/hobbies-sections-2.json')
   .then(response => response.json())
   .then(data => {
@@ -51,6 +59,7 @@ fetch('../JSON/hobbies-sections-1.json')
       hobbies.appendChild(section);
     });
   })
+}
 
   fetch('../JSON/hobbies-1.json')
   .then(response => response.json())
